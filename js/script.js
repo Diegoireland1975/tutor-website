@@ -6,9 +6,14 @@ mobileToggle.addEventListener("click", (e) => {
   mobileList.classList.toggle("active");
 });
 
-// REDUCE HEADER OPACITY ON SCROLL
+/* CHANGE BACKGROUND COLOR OF THE NAVBAR ON SCROLL */
 const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", (e) => {
-  navbar.style.opacity = Math.max(1 - scrollY / 300, 0.8);
+  // navbar.style.opacity = Math.max(1 - scrollY / 300, 0.8);
+  if (window.scrollY > 0) {
+    navbar.classList.add("navbar-scroll");
+  } else {
+    navbar.classList.remove("navbar-scroll");
+  }
 });
