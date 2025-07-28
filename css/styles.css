@@ -139,7 +139,7 @@ img {
 
 /* HERO SECTION */
 .hero {
-  background: url("/images/header-background.jpg") no-repeat top/cover;
+  background: url("/images/header-background.jpg") no-repeat center/cover;
   color: #fff;
   overflow-x: hidden;
   position: relative;
