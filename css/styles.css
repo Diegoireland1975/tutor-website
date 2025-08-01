@@ -72,12 +72,28 @@ img {
   color: var(--dark-color);
 }
 
-.section-title {
-  font-size: 2rem;
-  border-bottom: 5px solid var(--primary-color);
-  display: inline-block;
-  margin-bottom: 2rem;
-  padding-bottom: 0.2rem;
+.section-header {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-color);
+  }
+
+  p {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+  }
+
+  .heading-border {
+    width: 64px;
+    height: 4px;
+    margin: 0 auto 2rem;
+    background-color: var(--primary-color);
+  }
 }
 
 /* NAVBAR */
@@ -203,15 +219,6 @@ img {
 }
 
 /* SECTION LEARN */
-.learn {
-  text-align: center;
-
-  p {
-    font-size: 1.3rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-}
 
 .learn .learn-grid {
   padding: 3rem 0;
