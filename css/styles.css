@@ -98,6 +98,19 @@ img {
     background-color: var(--primary-color);
   }
 }
+/* card */
+.card {
+  padding: 2rem 1.7rem;
+  box-shadow: 0 4px 12px #ccc;
+  width: 100%;
+  height: 380px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 /* NAVBAR */
 .navbar {
@@ -261,18 +274,13 @@ img {
     text-align: center;
     gap: 2rem;
 
-    .card {
-      padding: 2rem 1rem;
-      box-shadow: 3px 5px 10px #ccc;
-      flex: 1;
-      height: 400px;
-    }
-
     h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
       margin: 1rem 0;
     }
     img {
-      width: 150px;
+      width: 130px;
       /* margin: 0 auto; */
     }
   }
