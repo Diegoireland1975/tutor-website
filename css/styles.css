@@ -285,6 +285,42 @@ img {
     }
   }
 }
+
+/* SECTION SUMMARY */
+.summary {
+  .container {
+    padding: 0;
+  }
+
+  padding: 3rem 0 2rem;
+  background: var(--light-color);
+  color: var(--dark-color);
+
+  .section-lists {
+    background: #fff;
+    padding: 2.5rem 1rem;
+    margin: 1.5rem 0;
+
+    h3 {
+      background: var(--primary-color);
+      color: var(--light-color);
+      padding: 0.5rem 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+  }
+
+  li {
+    padding: 2rem 0;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+}
+
 /* ############### */
 /* MEDIA QUERIES */
 /* ############### */
@@ -315,6 +351,17 @@ img {
   /* mobile menu */
   .mobile-menu-items {
     display: none;
+  }
+
+  /* Summary */
+  .summary {
+    .container {
+      padding: 1rem;
+    }
+
+    .section-lists {
+      padding: 2.5rem 1.5rem;
+    }
   }
 }
 
