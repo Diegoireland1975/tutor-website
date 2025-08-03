@@ -328,11 +328,11 @@ img {
 
 .info-flex {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .info-image {
-  flex: 1;
+  /* flex: 1; */
+  width: 50%;
 }
 
 .info-content {
@@ -343,6 +343,7 @@ img {
 
   p {
     margin: 1rem 0 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -405,10 +406,8 @@ img {
   /* Info section */
   .info-image {
     display: inline-flex;
-
-    img {
-      object-fit: cover;
-    }
+    background: url("/images/audience.jpg") no-repeat top center/cover;
+    /* width: 50%; */
   }
 
   .info-content {
@@ -416,7 +415,9 @@ img {
 
     h2 {
       font-size: 2rem;
-    }
+  }
+  p{
+    font-size: 1.2rem;
   }
 }
 
