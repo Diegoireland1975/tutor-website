@@ -370,14 +370,14 @@ img {
 
 /* SECTION TAKEAWAYS */
 .takeaways {
-  padding: 3rem 0;
+  padding: 3rem 0 1rem;
 
   .takeaways-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     justify-content: center;
     gap: 2rem;
-    padding: 4rem 0;
+    padding: 4rem 0 0rem;
   }
 
   .card {
@@ -400,6 +400,34 @@ img {
   }
 }
 
+/* SECTION DETAILS */
+.details {
+  padding: 3rem 0;
+
+  .details-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 3rem;
+
+    img {
+      width: 70%;
+      margin: 0 auto;
+      flex: 1;
+    }
+  }
+
+  .details-content .section-header {
+    text-align: left;
+    flex: 1;
+
+    p {
+      margin: 1rem 0 1.5rem;
+      font-size: 1rem;
+    }
+  }
+}
 /* ############### */
 /* MEDIA QUERIES */
 /* ############### */
@@ -492,6 +520,30 @@ img {
       align-items: center;
     }
   }
+  /* details */
+  .details {
+    .details-flex {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4rem;
+
+      img {
+        width: 55%;
+      }
+    }
+
+    .details-content .section-header {
+      flex: 2;
+    }
+  }
 }
 @media (min-width: 1200px) {
+  .details {
+    .details-flex {
+      img {
+        width: 45%;
+      }
+    }
+  }
 }
