@@ -36,8 +36,9 @@ li {
 img {
   max-width: 100%;
 }
-
+/* ////////////////// */
 /* Utilities Classes */
+/* ////////////////// */
 
 .container {
   width: 90%;
@@ -72,6 +73,14 @@ img {
   border: 1px solid var(--secondary-color);
   background: var(--secondary-color);
   color: var(--dark-color);
+}
+/* text classes */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
 }
 
 .section-header {
@@ -291,13 +300,13 @@ img {
 
 /* SECTION SUMMARY */
 .summary {
-  .container {
-    padding: 0;
-  }
-
   padding: 3rem 0 2rem;
   background: var(--light-color);
   color: var(--dark-color);
+
+  .container {
+    padding: 0;
+  }
 
   .section-lists {
     background: #fff;
@@ -331,7 +340,6 @@ img {
 }
 
 .info-image {
-  /* flex: 1; */
   width: 50%;
 }
 
@@ -357,6 +365,38 @@ img {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
     font-weight: 300;
+  }
+}
+
+/* SECTION TAKEAWAYS */
+.takeaways {
+  padding: 3rem 0;
+
+  .takeaways-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 0;
+  }
+
+  .card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    gap: 1rem;
+    height: 150px;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.takeaways {
+  span {
+    font-weight: 900;
+  }
+  i {
+    font-size: 2.5rem;
   }
 }
 
@@ -387,6 +427,7 @@ img {
       font-size: 1.5rem;
     }
   }
+
   /* mobile menu */
   .mobile-menu-items {
     display: none;
@@ -406,7 +447,7 @@ img {
   /* Info section */
   .info-image {
     display: inline-flex;
-    background: url("/images/audience.jpg") no-repeat top center/cover;
+    background: url("/images/audience.jpg") no-repeat left center/cover;
     /* width: 50%; */
   }
 
@@ -415,12 +456,12 @@ img {
 
     h2 {
       font-size: 2rem;
-  }
-  p{
-    font-size: 1.2rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
   }
 }
-
 @media (min-width: 992px) {
   /* hero section */
   .hero {
