@@ -403,31 +403,62 @@ img {
 /* SECTION DETAILS */
 .details {
   padding: 3rem 0;
+}
 
-  .details-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    gap: 3rem;
+.details img {
+  width: 70%;
+  margin: 0 auto;
+  flex: 1;
+}
 
-    img {
-      width: 70%;
-      margin: 0 auto;
-      flex: 1;
+.details .details-content .section-header,
+.author .details-content .section-header {
+  text-align: left;
+  flex: 1;
+}
+
+.details .heading-border,
+.author .heading-border {
+  margin: 0;
+}
+
+.details p,
+.author p {
+  margin: 1rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+.details .details-flex,
+.author .author-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 3rem;
+}
+
+/* SECION AUTHOR */
+.author {
+  padding: 2rem 0;
+
+  .details-content {
+    span {
+      font-weight: 900;
     }
-  }
 
-  .details-content .section-header {
-    text-align: left;
-    flex: 1;
+    i {
+      margin-right: 0.5rem;
+    }
 
-    p {
-      margin: 1rem 0 1.5rem;
-      font-size: 1rem;
+    ul {
+      margin-bottom: 2rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
     }
   }
 }
+
 /* ############### */
 /* MEDIA QUERIES */
 /* ############### */
@@ -436,10 +467,12 @@ img {
   .navbar {
     padding: 0.4rem;
   }
+
   .navbar .logo {
     min-width: 30px;
     margin-right: 0.2rem;
   }
+
   /* Desktop menu */
   .main-menu-items {
     display: inline;
@@ -495,9 +528,10 @@ img {
   .hero {
     padding: 11.5rem 2rem 11rem;
   }
+
   .hero .hero-flex {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     gap: 5rem;
   }
@@ -508,6 +542,7 @@ img {
       font-size: 3.5rem;
     }
   }
+
   .hero .hero-image .course {
     width: 1000px;
   }
@@ -520,6 +555,7 @@ img {
       align-items: center;
     }
   }
+
   /* details */
   .details {
     .details-flex {
@@ -527,17 +563,32 @@ img {
       justify-content: space-between;
       align-items: center;
       gap: 4rem;
-
-      img {
-        width: 55%;
-      }
+    }
+    img {
+      width: 55%;
     }
 
     .details-content .section-header {
       flex: 2;
     }
   }
+
+  /* Author */
+  .author {
+    .author-flex {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4rem;
+
+      img {
+        width: 50%;
+      }
+    }
+  }
 }
+
 @media (min-width: 1200px) {
   .details {
     .details-flex {
