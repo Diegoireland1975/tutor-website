@@ -565,6 +565,39 @@ img {
   background: var(--primary-color);
   color: #fff;
 }
+
+/* Social Section */
+.social {
+  background: var(--dark-color);
+  color: #fff;
+  text-align: center;
+}
+
+.social .social-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social p {
+  font-size: 1.2rem;
+}
+
+.social .social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+
+.social .social-icons i {
+  transition: 0.25s ease;
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
+
 /* ############### */
 /* MEDIA QUERIES */
 /* ############### */
@@ -652,6 +685,15 @@ img {
     p {
       font-size: 1.2rem;
     }
+  }
+
+  /* social section */
+  .social p {
+    font-size: 2rem;
+  }
+
+  .social .social-icons i {
+    font-size: 3rem;
   }
 }
 @media (min-width: 992px) {
