@@ -510,14 +510,18 @@ img {
 }
 
 /* Newsletter Section */
+.newsletter {
+  text-align: center;
+}
+
 .newsletter .newsletter-flex {
   background: var(--light-color);
+  border: 1px solid #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 4rem 2rem;
-  text-align: center;
 }
 
 .newsletter input[type="email"] {
@@ -525,7 +529,7 @@ img {
   border: 1px solid #ccc;
   border-radius: 32px;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .newsletter .section-title {
@@ -585,7 +589,8 @@ img {
   /* Newsletter */
   .newsletter p {
     display: inline;
-    margin: 1rem 0;
+    max-width: 600px;
+    margin: 1rem auto;
   }
 }
 
