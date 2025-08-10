@@ -526,7 +526,6 @@ img {
   border-radius: 32px;
   width: 100%;
   max-width: 400px;
-  margin-bottom: 1.5rem;
 }
 
 .newsletter .section-title {
@@ -536,6 +535,22 @@ img {
 
 .newsletter p {
   display: none;
+}
+
+.newsletter .form-group {
+  margin: 1rem 0 1.5rem;
+}
+
+.newsletter .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .newsletter btn {
