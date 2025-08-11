@@ -615,8 +615,7 @@ img {
 .footer .footer-links a {
   transition: 0.25s ease;
 
-  .social .social-icons &:hover,
-  .footer .footer-links &:hover {
+  &:hover {
     color: var(--secondary-color);
     cursor: pointer;
   }
