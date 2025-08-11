@@ -63,7 +63,7 @@ img {
   transition: all 0.3s ease-in;
 
   &:hover {
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     color: #fff;
     border-color: #fff;
   }
@@ -93,25 +93,26 @@ img {
   margin: 0 auto;
   text-align: center;
 
-  .section-title {
+  & .section-title {
     font-size: 2rem;
     font-weight: 700;
     color: var(--dark-color);
     margin-bottom: 0.5rem;
   }
 
-  p {
+  & p {
     font-size: 1.3rem;
     color: var(--dark-color);
   }
 
-  .heading-border {
+  & .heading-border {
     width: 64px;
     height: 4px;
     margin: 0 auto 2rem;
     background-color: var(--primary-color);
   }
 }
+
 /* card */
 .card {
   padding: 2rem 1.7rem;
@@ -142,14 +143,16 @@ img {
   left: 0;
   transition: background-color 0.5s ease-in-out;
 
-  a {
+  & a {
     font-weight: bold;
     transition: 0.2s ease-in;
   }
+
   a:hover {
     color: var(--secondary-color);
   }
-  .logo {
+
+  & .logo {
     width: 80px;
   }
 }
@@ -176,6 +179,7 @@ img {
   cursor: pointer;
   padding: 0.4rem 0;
 }
+
 .mobile-menu-list {
   position: fixed;
   z-index: -1;
@@ -195,7 +199,7 @@ img {
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
 
-  a {
+  & a {
     font-size: 1.1rem;
     font-weight: 400;
   }
@@ -226,12 +230,13 @@ img {
 .hero .hero-text {
   text-align: center;
 
-  h1 {
+  & h1 {
     font-size: 2.5rem;
     line-height: 1.3;
     font-weight: 700;
   }
-  p {
+
+  & p {
     font-size: 1.2rem;
     margin: 1rem 0 2rem;
     line-height: 1.8;
@@ -265,7 +270,7 @@ img {
 .learn figure {
   overflow: hidden;
 
-  img {
+  & img {
     transition: 0.25s all ease-in;
     transform-origin: center left;
 
@@ -284,7 +289,7 @@ img {
 
 /* SECTION CHAPTERS */
 .chapters {
-  .chapters-card-flex {
+  & .chapters-card-flex {
     padding: 4rem 0;
     display: flex;
     flex-direction: column;
@@ -293,12 +298,13 @@ img {
     text-align: center;
     gap: 2rem;
 
-    h3 {
+    & h3 {
       font-size: 1.25rem;
       font-weight: 700;
       margin: 1rem 0;
     }
-    img {
+
+    & img {
       width: 130px;
       /* margin: 0 auto; */
     }
@@ -310,16 +316,16 @@ img {
   background: var(--light-color);
   color: var(--dark-color);
 
-  .container {
+  & .container {
     padding: 0;
   }
 
-  .section-lists {
+  & .section-lists {
     background: #fff;
     padding: 2.5rem 1rem;
     margin-top: 2rem;
 
-    h3 {
+    & h3 {
       background: var(--primary-color);
       color: var(--light-color);
       padding: 0.5rem 1rem;
@@ -329,12 +335,12 @@ img {
     }
   }
 
-  li {
+  & li {
     padding: 2rem 0;
     border-bottom: 1px solid #dbdbdb;
   }
 
-  li:last-child {
+  & li:last-child {
     border-bottom: none;
   }
 }
@@ -355,19 +361,19 @@ img {
   color: #fff;
   padding: 2rem;
 
-  p {
+  & p {
     margin: 1rem 0 1.5rem;
     font-size: 1rem;
   }
 }
 
 .info-list {
-  i {
+  & i {
     color: var(--secondary-color);
     margin-right: 0.5rem;
   }
 
-  li {
+  & li {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
     font-weight: 300;
@@ -377,7 +383,8 @@ img {
 /* SECTION TAKEAWAYS */
 .takeaways {
   padding-bottom: 1rem;
-  .takeaways-card-grid {
+
+  & .takeaways-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     justify-content: center;
@@ -385,7 +392,7 @@ img {
     padding: 4rem 0 0rem;
   }
 
-  .card {
+  & .card {
     flex-direction: row;
     justify-content: space-between;
     align-self: center;
@@ -397,10 +404,11 @@ img {
 }
 
 .takeaways {
-  span {
+  & span {
     font-weight: 900;
   }
-  i {
+
+  & i {
     font-size: 2.5rem;
   }
 }
@@ -443,19 +451,20 @@ img {
 .author {
   background: url("/images/author-background.jpg") no-repeat center center/cover;
 
-  .details-content {
+  & .details-content {
     span {
       font-weight: 900;
     }
 
-    i {
+    & i {
       margin-right: 0.5rem;
     }
 
-    ul {
+    & ul {
       margin-bottom: 2rem;
     }
-    li {
+
+    & li {
       margin-bottom: 0.5rem;
     }
   }
@@ -465,25 +474,25 @@ img {
 .stats {
   background: url("/images/stats-background.jpg") no-repeat center center/cover;
 
-  .stats-flex {
+  & .stats-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 
-    img {
+    & img {
       width: 100%;
       max-width: 500px;
     }
 
-    .stats-content {
+    & .stats-content {
       flex: 1;
       text-align: center;
       color: #fff;
     }
 
-    .stats-text {
+    & .stats-text {
       color: #fff;
       margin: 1rem 0 2rem;
       font-size: 1.2rem;
@@ -491,19 +500,19 @@ img {
     }
   }
 
-  .stats-numbers {
+  & .stats-numbers {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 
-    h3 {
+    & h3 {
       font-weight: 700;
       font-size: 3rem;
     }
 
-    p {
+    & p {
       font-size: 0.8rem;
     }
   }
@@ -626,6 +635,7 @@ img {
   align-items: center;
   gap: 2rem;
 }
+
 .footer .footer-links {
   display: flex;
   align-items: center;
@@ -644,7 +654,7 @@ img {
 
   /* Stats */
   .stats {
-    .stats-numbers {
+    & .stats-numbers {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -682,7 +692,7 @@ img {
     align-items: center;
     gap: 2rem;
 
-    i {
+    & i {
       font-size: 1.5rem;
     }
   }
@@ -694,11 +704,11 @@ img {
 
   /* Summary */
   .summary {
-    .container {
+    & .container {
       padding: 1rem;
     }
 
-    .section-lists {
+    & .section-lists {
       padding: 2.5rem 1.5rem;
     }
   }
@@ -713,10 +723,11 @@ img {
   .info-content {
     padding: 3rem;
 
-    h2 {
+    & h2 {
       font-size: 2rem;
     }
-    p {
+
+    & p {
       font-size: 1.2rem;
     }
   }
@@ -751,7 +762,8 @@ img {
 
   .hero .hero-text {
     text-align: left;
-    h1 {
+
+    & h1 {
       font-size: 3.5rem;
     }
   }
@@ -762,7 +774,7 @@ img {
 
   /* chapters section */
   .chapters {
-    .chapters-card-flex {
+    & .chapters-card-flex {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -771,38 +783,38 @@ img {
 
   /* details */
   .details {
-    .details-flex {
+    & .details-flex {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       gap: 4rem;
     }
-    img {
+    & img {
       width: 55%;
     }
 
-    .details-content .section-header {
+    & .details-content .section-header {
       flex: 2;
     }
   }
 
   /* Author */
   .author {
-    .author-flex {
+    & .author-flex {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
       gap: 4rem;
 
-      img {
+      & img {
         width: 50%;
       }
     }
   }
   /* Section Stats */
   .stats {
-    .stats-flex {
+    & .stats-flex {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -812,21 +824,19 @@ img {
 
 @media (min-width: 1200px) {
   .details {
-    .details-flex {
-      img {
+    & .details-flex {
+      & img {
         width: 45%;
       }
     }
   }
   /* Section Stats */
   .stats {
-    .stats-flex {
+    & .stats-flex {
       gap: 7rem;
 
-      .stats-content {
-        .stats-numbers h3 {
-          font-size: 2.7rem;
-        }
+      & .stats-numbers h3 {
+        font-size: 2.7rem;
       }
     }
   }
