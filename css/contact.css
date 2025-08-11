@@ -1,0 +1,9 @@
+.inner-header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 8rem 0 1rem;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
