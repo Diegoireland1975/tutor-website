@@ -5,6 +5,8 @@
 
   h1 {
     font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
   }
 }
 /* Contact Section */
@@ -41,7 +43,8 @@
       outline: none;
     }
 
-    input:focus {
+    input:focus,
+    textarea:focus {
       outline: 2px solid var(--secondary-color);
     }
 
@@ -57,5 +60,26 @@
     width: 100%;
     font-size: inherit;
     font-family: inherit;
+    margin: 0 auto;
   }
+}
+
+/* Section Location */
+.location h2 {
+  font-weight: 700;
+}
+
+.location p {
+  margin: 1rem 0 2rem;
+}
+
+.location .map {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.location iframe {
+  width: 100%;
+  height: 80vh;
+  border: 0;
 }
